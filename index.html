@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ausaaf Shaikh — Data Analyst</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Grain Overlay -->
+    <div class="grain"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-line" id="scroll-line"></div>
+
+    <!-- Cursor -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-num" id="loader-num">0</div>
+            <div class="loader-bar-wrap"><div class="loader-bar-fill" id="loader-bar"></div></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="#hero" class="nav-logo">AS</a>
+        <nav class="nav" id="nav">
+            <a href="#work" class="nav-link">Work</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="nav-right">
+            <div class="nav-status">
+                <span class="status-dot"></span>Open to work
+            </div>
+            <a href="Ausaaf_Shaikh_Resume.pdf" download class="nav-resume">
+                Resume <span class="resume-arrow">↓</span>
+            </a>
+        </div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+            <span></span><span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#work" class="mobile-link">Work</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="Ausaaf_Shaikh_Resume.pdf" download class="mobile-link mobile-resume">Resume ↓</a>
+    </div>
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-top">
+            <div class="hero-tag clip-reveal">
+                <span class="mono">Data Analyst · AI Builder · Mumbai</span>
+            </div>
+            <div class="hero-year clip-reveal">
+                <span class="mono">© 2026</span>
+            </div>
+        </div>
+
+        <div class="hero-name">
+            <div class="name-row">
+                <span class="name-word" id="scramble-name">AUSAAF</span>
+            </div>
+            <div class="name-row name-row-2">
+                <span class="name-sub" id="stagger-sub">Shaikh</span>
+                <span class="name-at clip-reveal delay-3">@ JHS &amp; Associates LLP</span>
+            </div>
+        </div>
+
+        <div class="hero-bottom">
+            <p class="hero-desc clip-reveal delay-4">
+                I turn messy data into clear decisions — through analysis,<br>
+                machine learning, and the occasional stroke of intuition.
+            </p>
+            <div class="hero-cta clip-reveal delay-5">
+                <a href="#work" class="btn-text">
+                    View Work <span class="arrow">↓</span>
+                </a>
+                <a href="Ausaaf_Shaikh_Resume.pdf" download class="btn-text btn-resume">
+                    Download CV <span class="arrow">↓</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-scroll-hint">
+            <div class="scroll-line-anim"></div>
+            <span class="mono small">scroll</span>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ MARQUEE ═══════════════════ -->
+    <div class="marquee-wrap">
+        <div class="marquee-track">
+            <div class="marquee-inner">
+                <span>DATA ANALYSIS</span><span class="dot">·</span>
+                <span>MACHINE LEARNING</span><span class="dot">·</span>
+                <span>GENERATIVE AI</span><span class="dot">·</span>
+                <span>PYTHON</span><span class="dot">·</span>
+                <span>POWER BI</span><span class="dot">·</span>
+                <span>SQL</span><span class="dot">·</span>
+                <span>STREAMLIT</span><span class="dot">·</span>
+                <span>GOOGLE GEMINI</span><span class="dot">·</span>
+                <span>NLP</span><span class="dot">·</span>
+                <span>FRAUD DETECTION</span><span class="dot">·</span>
+                <span>TABLEAU</span><span class="dot">·</span>
+            </div>
+            <div class="marquee-inner" aria-hidden="true">
+                <span>DATA ANALYSIS</span><span class="dot">·</span>
+                <span>MACHINE LEARNING</span><span class="dot">·</span>
+                <span>GENERATIVE AI</span><span class="dot">·</span>
+                <span>PYTHON</span><span class="dot">·</span>
+                <span>POWER BI</span><span class="dot">·</span>
+                <span>SQL</span><span class="dot">·</span>
+                <span>STREAMLIT</span><span class="dot">·</span>
+                <span>GOOGLE GEMINI</span><span class="dot">·</span>
+                <span>NLP</span><span class="dot">·</span>
+                <span>FRAUD DETECTION</span><span class="dot">·</span>
+                <span>TABLEAU</span><span class="dot">·</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════ WORK ═══════════════════ -->
+    <section class="work" id="work">
+        <div class="section-header">
+            <span class="section-num mono">01</span>
+            <h2 class="section-title">Selected Work</h2>
+        </div>
+
+        <div class="projects-list">
+
+            <a href="https://github.com/ausaafff/Invoice-Extractor" target="_blank" rel="noopener" class="pr-row clip-reveal">
+                <div class="pr-accent-bar"></div>
+                <div class="pr-left">
+                    <span class="pr-num mono">01</span>
+                </div>
+                <div class="pr-body">
+                    <div class="pr-top-row">
+                        <h3 class="pr-title">Multilingual Invoice Analysis Tool</h3>
+                        <div class="pr-right">
+                            <span class="pr-cat mono">Generative AI</span>
+                            <span class="pr-arrow">↗</span>
+                        </div>
+                    </div>
+                    <p class="pr-desc">Full-stack Streamlit app using Google Gemini 1.5 Flash to extract structured data from invoice images — 5 languages, 90%+ accuracy on 200+ invoices. Answers custom natural-language queries with an agentic workflow.</p>
+                    <div class="pr-footer">
+                        <div class="pr-stack">
+                            <span>Python</span><span>Streamlit</span><span>Gemini API</span><span>CSS</span>
+                        </div>
+                        <span class="pr-year mono">2024</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/ausaafff/credit-card-fraud-detection-" target="_blank" rel="noopener" class="pr-row clip-reveal" style="--d:0.1s">
+                <div class="pr-accent-bar"></div>
+                <div class="pr-left">
+                    <span class="pr-num mono">02</span>
+                </div>
+                <div class="pr-body">
+                    <div class="pr-top-row">
+                        <h3 class="pr-title">Credit Card Fraud Detection</h3>
+                        <div class="pr-right">
+                            <span class="pr-cat mono">Machine Learning</span>
+                            <span class="pr-arrow">↗</span>
+                        </div>
+                    </div>
+                    <p class="pr-desc">End-to-end ML pipeline on highly imbalanced financial data. Applied SMOTE oversampling and ensemble methods (Random Forest, XGBoost) to maximise recall without sacrificing precision.</p>
+                    <div class="pr-footer">
+                        <div class="pr-stack">
+                            <span>Python</span><span>scikit-learn</span><span>XGBoost</span><span>imblearn</span>
+                        </div>
+                        <span class="pr-year mono">2024</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://github.com/ausaafff/Air-Tourism" target="_blank" rel="noopener" class="pr-row clip-reveal" style="--d:0.2s">
+                <div class="pr-accent-bar"></div>
+                <div class="pr-left">
+                    <span class="pr-num mono">03</span>
+                </div>
+                <div class="pr-body">
+                    <div class="pr-top-row">
+                        <h3 class="pr-title">Air Tourism Case Study</h3>
+                        <div class="pr-right">
+                            <span class="pr-cat mono">Analytics</span>
+                            <span class="pr-arrow">↗</span>
+                        </div>
+                    </div>
+                    <p class="pr-desc">Interactive Power BI dashboard visualising global tourism trends and CO₂ emissions — enabling sustainability-focused decision-making across country-level data.</p>
+                    <div class="pr-footer">
+                        <div class="pr-stack">
+                            <span>Power BI</span><span>Python</span><span>Excel</span>
+                        </div>
+                        <span class="pr-year mono">2024</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════ SKILLS ═══════════════════ -->
+    <section class="skills-sect" id="skills">
+        <div class="section-header">
+            <span class="section-num mono">02</span>
+            <h2 class="section-title">Skills</h2>
+        </div>
+
+        <div class="skills-table">
+
+            <div class="skill-row clip-reveal">
+                <span class="skill-cat mono">Languages</span>
+                <div class="skill-items">
+                    <span>Python</span><span>SQL</span><span>JavaScript</span><span>HTML / CSS</span>
+                </div>
+            </div>
+
+            <div class="skill-row clip-reveal" style="--d:0.05s">
+                <span class="skill-cat mono">ML / AI</span>
+                <div class="skill-items">
+                    <span>scikit-learn</span><span>XGBoost</span><span>SMOTE</span><span>NLP</span><span>Gemini API</span><span>LangChain</span>
+                </div>
+            </div>
+
+            <div class="skill-row clip-reveal" style="--d:0.1s">
+                <span class="skill-cat mono">Analytics</span>
+                <div class="skill-items">
+                    <span>Power BI</span><span>Tableau</span><span>Apache Superset</span><span>Excel</span>
+                </div>
+            </div>
+
+            <div class="skill-row clip-reveal" style="--d:0.15s">
+                <span class="skill-cat mono">Engineering</span>
+                <div class="skill-items">
+                    <span>Pandas</span><span>NumPy</span><span>Streamlit</span><span>Git</span>
+                </div>
+            </div>
+
+            <div class="skill-row clip-reveal" style="--d:0.2s">
+                <span class="skill-cat mono">Databases</span>
+                <div class="skill-items">
+                    <span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════════════ APPROACH ═══════════════════ -->
+    <section class="approach" id="approach">
+        <div class="section-header">
+            <span class="section-num mono">03</span>
+            <h2 class="section-title">Approach</h2>
+        </div>
+
+        <div class="approach-body">
+            <p class="big-stmt">
+                Collect. <em>Analyse.</em> Deliver.
+            </p>
+
+            <div class="approach-grid">
+                <div class="approach-item clip-reveal">
+                    <h4>Asking questions matters.</h4>
+                    <p>Clean data doesn't tell you what to look for. Understanding the problem first — before writing a single line of code — is the difference between a good model and a useful one.</p>
+                </div>
+                <div class="approach-item clip-reveal">
+                    <h4>Clarity over complexity.</h4>
+                    <p>An insight buried in a 50-tab dashboard isn't an insight. I build reports and models that communicate — to technical teams and stakeholders alike.</p>
+                </div>
+                <div class="approach-item clip-reveal">
+                    <h4>Build for change.</h4>
+                    <p>Data pipelines break. Business requirements shift. I write code and workflows that expect this — modular, documented, and easy to extend.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ EXPERIENCE ═══════════════════ -->
+    <section class="experience-section" id="experience">
+        <div class="section-header">
+            <span class="section-num mono">04</span>
+            <h2 class="section-title">Experience</h2>
+        </div>
+
+        <div class="exp-list">
+
+            <div class="exp-item clip-reveal">
+                <div class="exp-left">
+                    <span class="exp-year mono">2025 — Now</span>
+                    <span class="exp-tag current">Current</span>
+                </div>
+                <div class="exp-center">
+                    <h3 class="exp-role">Data Analyst</h3>
+                    <span class="exp-company">JHS &amp; Associates LLP</span>
+                </div>
+                <p class="exp-desc">Analysing financial and operational data to drive strategic decisions. Building automated reporting pipelines and dashboards, and surfacing actionable insights to stakeholders across the firm.</p>
+            </div>
+
+            <div class="exp-divider"></div>
+
+            <div class="exp-item clip-reveal">
+                <div class="exp-left">
+                    <span class="exp-year mono">2025</span>
+                </div>
+                <div class="exp-center">
+                    <h3 class="exp-role">Data Engineer Intern</h3>
+                    <span class="exp-company">Apnalaya</span>
+                </div>
+                <p class="exp-desc">Designed interactive Apache Superset dashboards. Automated repetitive Excel tasks with Python (saved 10+ hours/week). Built scalable pipelines improving accuracy by 25%.</p>
+            </div>
+
+            <div class="exp-divider"></div>
+
+            <div class="exp-item clip-reveal">
+                <div class="exp-left">
+                    <span class="exp-year mono">2023</span>
+                </div>
+                <div class="exp-center">
+                    <h3 class="exp-role">Data Analyst Intern</h3>
+                    <span class="exp-company">Infinity Learning</span>
+                </div>
+                <p class="exp-desc">Built a KPI-rich dashboard instrumental in supporting a university partnership proposal — giving leadership a clear, data-backed case.</p>
+            </div>
+
+        </div>
+
+        <div class="edu-block clip-reveal">
+            <span class="mono small">Education</span>
+            <p class="edu-text">BSc Data Science &amp; Business Analytics — Mumbai University <span class="mono muted">2023–2026</span></p>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ CONTACT ═══════════════════ -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <span class="section-num mono">05</span>
+            <h2 class="section-title">Contact</h2>
+        </div>
+
+        <div class="contact-body">
+            <h2 class="contact-big">
+                Let's work<br><em>together.</em>
+            </h2>
+            <p class="contact-sub clip-reveal">
+                Open to analyst roles, freelance projects, and data collaborations.
+            </p>
+
+            <div class="contact-links clip-reveal">
+                <a href="mailto:shk.ausaaf@gmail.com" class="contact-link">
+                    <span class="link-label mono">Email</span>
+                    <span class="link-val">shk.ausaaf@gmail.com <span class="arrow">↗</span></span>
+                </a>
+                <a href="https://www.linkedin.com/in/ausaaf-shaikh-77675a1b0/" target="_blank" rel="noopener" class="contact-link">
+                    <span class="link-label mono">LinkedIn</span>
+                    <span class="link-val">Ausaaf Shaikh <span class="arrow">↗</span></span>
+                </a>
+                <a href="https://github.com/ausaafff?tab=repositories" target="_blank" rel="noopener" class="contact-link">
+                    <span class="link-label mono">GitHub</span>
+                    <span class="link-val">ausaafff <span class="arrow">↗</span></span>
+                </a>
+                <div class="contact-link no-hover">
+                    <span class="link-label mono">Phone</span>
+                    <span class="link-val">+91 9167626263</span>
+                </div>
+                <a href="Ausaaf_Shaikh_Resume.pdf" download class="contact-link">
+                    <span class="link-label mono">Resume</span>
+                    <span class="link-val">Download CV <span class="arrow">↓</span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer class="footer">
+        <span class="mono small muted">Ausaaf Shaikh © 2026</span>
+        <span class="mono small muted">Mumbai, India</span>
+    </footer>
+
+    <!-- Drag Cursor Label -->
+    <div class="drag-cursor" id="drag-cursor">drag</div>
+
+    <!-- Back to Top -->
+    <button class="back-top" id="back-top" aria-label="Back to top">
+        <span class="back-top-arrow">↑</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
