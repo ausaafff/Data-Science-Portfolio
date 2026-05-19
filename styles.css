@@ -829,7 +829,10 @@ section { padding: 7rem 2.5rem; }
     flex-shrink: 0;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> abe6a670da12a19e620506a4608a0343662ab837
 /* ═══════════════════════════════════════
    APPROACH
 ═══════════════════════════════════════ */
@@ -1209,6 +1212,7 @@ section { padding: 7rem 2.5rem; }
     .pr-body { padding: 1.5rem 1.25rem 1.5rem 1rem; }
 
     .footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+<<<<<<< HEAD
 
     /* Hide decorative scroll hint — overlaps CTA on small screens */
     .hero-scroll-hint { display: none; }
@@ -1225,6 +1229,8 @@ section { padding: 7rem 2.5rem; }
         transition-duration: 0.45s !important;
         transition-delay: calc(var(--wi, 0s) * 0.6) !important;
     }
+=======
+>>>>>>> abe6a670da12a19e620506a4608a0343662ab837
 }
 
 @media (max-width: 480px) {

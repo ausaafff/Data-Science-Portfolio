@@ -225,7 +225,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
    REVEAL ON SCROLL — works on all screen sizes
 ═══════════════════════════════════════ */
 const isMobile = window.matchMedia('(max-width: 768px)').matches;
-
 const revealObs = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (!entry.isIntersecting) return;
@@ -251,6 +250,7 @@ const wordObs = new IntersectionObserver(entries => {
         entry.target.classList.add('words-revealed');
         wordObs.unobserve(entry.target);
     });
+
 }, {
     threshold: isMobile ? 0.05 : 0.15,
     rootMargin: isMobile ? '0px 0px -10px 0px' : '0px 0px -30px 0px'
